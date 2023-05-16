@@ -8,7 +8,8 @@ const Services = () => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
-    })
+    }, [])
+    
     return (
         <div className="mt-16">
             <div className='text-center mt-4'>
